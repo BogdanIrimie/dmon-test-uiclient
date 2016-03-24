@@ -57,6 +57,9 @@ public class Controller {
 
                 request.setAdapter("adapters.EventHubAdapter");
 
+                request.setRepetitions(3);
+                request.setRepetitionInterval(30);
+
                 String requestResponse = RequestSenderWithMessage.sendRequest("http://127.0.0.1:8080/request", request);
                 Platform.runLater(new Runnable() {
                     public void run() {

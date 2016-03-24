@@ -8,6 +8,8 @@ public class Request {
     private String clientId;
     private String command;
     private String responseAddress;
+    private int repetitions;
+    private int repetitionInterval;
     private String[] processors;
     private String adapter;
 
@@ -35,6 +37,22 @@ public class Request {
         this.responseAddress = responseAddress;
     }
 
+    public int getRepetitions() {
+        return repetitions;
+    }
+
+    public void setRepetitions(int repetitions) {
+        this.repetitions = repetitions;
+    }
+
+    public int getRepetitionInterval() {
+        return repetitionInterval;
+    }
+
+    public void setRepetitionInterval(int repetitionInterval) {
+        this.repetitionInterval = repetitionInterval;
+    }
+
     public String[] getProcessors() {
         return processors;
     }
@@ -50,5 +68,4 @@ public class Request {
     public void setAdapter(String adapter) {
         this.adapter = adapter;
     }
-
 }
