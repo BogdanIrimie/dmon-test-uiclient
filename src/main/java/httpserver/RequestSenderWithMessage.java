@@ -32,11 +32,11 @@ public class RequestSenderWithMessage {
             }
             return responseString.toString();
         } catch (UnsupportedEncodingException e) {
-            e.getStackTrace();
+            e.printStackTrace();
         } catch (MalformedURLException e) {
-            e.getStackTrace();
+            e.printStackTrace();
         } catch (IOException e) {
-            e.getStackTrace();
+            e.printStackTrace();
         }
         return "...";
     }
